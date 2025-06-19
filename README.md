@@ -1,4 +1,4 @@
-# VidyaVerse - Modern Web Solutions
+# Strategize. - Modern Marketing Solutions
 
 A modern, responsive website built with React, Tailwind CSS, and Framer Motion. Features beautiful animations, dark mode support, and a stunning user interface.
 
@@ -28,8 +28,8 @@ A modern, responsive website built with React, Tailwind CSS, and Framer Motion. 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/vidyaverse.git
-   cd vidyaverse
+   git clone https://github.com/yourusername/strategize.git
+   cd strategize
    ```
 
 2. Install dependencies:

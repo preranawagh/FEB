@@ -17,6 +17,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode, onMouseEnter, onMouseLeave }) => {
 
   const navLinks = [
     { name: 'Home', href: '#home' },
+    { name: 'About Us', href: '#about' },
     { name: 'Features', href: '#features' },
     { name: 'Services', href: '#services' },
     { name: 'Projects', href: '#projects' },
@@ -41,7 +42,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode, onMouseEnter, onMouseLeave }) => {
             transition={{ duration: 0.5 }}
           >
             <a href="#home" className="text-2xl font-bold text-primary-600 dark:text-primary-400">
-              VidyaVerse
+              Strategize.
             </a>
           </motion.div>
 

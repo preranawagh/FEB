@@ -66,12 +66,11 @@ const Hero = ({ onMouseEnter, onMouseLeave }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Build{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600">
-            Beautiful
+            Strategize Your Marketing.
           </span>
           <br />
-          Web Experiences
+          Accelerate Your Growth.
         </motion.h1>
 
         <motion.p

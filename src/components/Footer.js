@@ -56,7 +56,7 @@ const Footer = ({ onMouseEnter, onMouseLeave }) => {
               className="text-2xl font-bold text-primary-600 dark:text-primary-400"
               whileHover={{ scale: 1.05 }}
             >
-              VidyaVerse
+              Strategize.
             </motion.a>
             <p className="text-gray-600 dark:text-gray-300">
               Creating beautiful digital experiences that inspire and innovate.
@@ -90,7 +90,7 @@ const Footer = ({ onMouseEnter, onMouseLeave }) => {
             <ul className="space-y-2 text-gray-600 dark:text-gray-300">
               <li>123 Innovation Street</li>
               <li>Tech City, TC 12345</li>
-              <li>hello@vidyaverse.com</li>
+              <li>hello@strategize.com</li>
               <li>+1 (555) 123-4567</li>
             </ul>
           </div>
@@ -140,7 +140,7 @@ const Footer = ({ onMouseEnter, onMouseLeave }) => {
 
             {/* Copyright */}
             <p className="text-gray-500 dark:text-gray-400 text-center">
-              © {new Date().getFullYear()} VidyaVerse. Made with{' '}
+              © {new Date().getFullYear()} Strategize. Made with{' '}
               <HiHeart className="inline-block w-5 h-5 text-red-500 animate-pulse" />{' '}
               by our team.
             </p>

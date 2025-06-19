@@ -86,4 +86,20 @@
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
-} 
+}
+
+/* Loader custom styles */
+.loader-rectangle {
+  transition: all 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+.loader-rectangle.l-shape {
+  border-bottom-left-radius: 120px !important;
+  width: 300px !important;
+  height: 300px !important;
+  transform: scale(1.1);
+}
+.loader-rectangle.zoom {
+  transform: scale(30) !important;
+  opacity: 0 !important;
+}
+/* End loader styles */ 

@@ -15,12 +15,16 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 import PopUp from './components/PopUp';
+import Loader from './components/Loader';
+import AboutUs from './components/AboutUs';
+import Customers from './components/Customers';
 
 function App() {
   const [showPopUp, setShowPopUp] = useState(false);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [cursorVariant, setCursorVariant] = useState('default');
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Initialize AOS
@@ -56,49 +60,47 @@ function App() {
 
   return (
     <div className={`min-h-screen dark-mode-transition ${isDarkMode ? 'dark' : ''}`}>
-      <CustomCursor position={cursorPosition} variant={cursorVariant} />
-      
-      <Navbar 
-        isDarkMode={isDarkMode} 
-        toggleDarkMode={toggleDarkMode}
-        onMouseEnter={handleCursorEnter}
-        onMouseLeave={handleCursorLeave}
-      />
-
-      <main>
-        <Hero 
-          onMouseEnter={handleCursorEnter}
-          onMouseLeave={handleCursorLeave}
-        />
-        
-        <Features />
-        
-        <Services 
-          onMouseEnter={handleCursorEnter}
-          onMouseLeave={handleCursorLeave}
-        />
-        
-        <Projects />
-        
-        <Testimonials />
-        
-        <Contact 
-          onMouseEnter={handleCursorEnter}
-          onMouseLeave={handleCursorLeave}
-        />
-      </main>
-
-      <Footer 
-        onMouseEnter={handleCursorEnter}
-        onMouseLeave={handleCursorLeave}
-      />
-
-      {/* Pop-up */}
-      <AnimatePresence>
-        {showPopUp && (
-          <PopUp onClose={() => setShowPopUp(false)} />
-        )}
-      </AnimatePresence>
+      {loading && <Loader onComplete={() => setLoading(false)} />}
+      {!loading && (
+        <>
+          <CustomCursor position={cursorPosition} variant={cursorVariant} />
+          <Navbar 
+            isDarkMode={isDarkMode} 
+            toggleDarkMode={toggleDarkMode}
+            onMouseEnter={handleCursorEnter}
+            onMouseLeave={handleCursorLeave}
+          />
+          <main>
+            <Hero 
+              onMouseEnter={handleCursorEnter}
+              onMouseLeave={handleCursorLeave}
+            />
+            <AboutUs />
+            <Features />
+            <Customers />
+            <Services 
+              onMouseEnter={handleCursorEnter}
+              onMouseLeave={handleCursorLeave}
+            />
+            <Projects />
+            <Testimonials />
+            <Contact 
+              onMouseEnter={handleCursorEnter}
+              onMouseLeave={handleCursorLeave}
+            />
+          </main>
+          <Footer 
+            onMouseEnter={handleCursorEnter}
+            onMouseLeave={handleCursorLeave}
+          />
+          {/* Pop-up */}
+          <AnimatePresence>
+            {showPopUp && (
+              <PopUp onClose={() => setShowPopUp(false)} />
+            )}
+          </AnimatePresence>
+        </>
+      )}
     </div>
   );
 }
