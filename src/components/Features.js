@@ -26,7 +26,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="py-20 px-4 bg-light dark:bg-dark">
+    <section id="features" className="py-20 px-4 bg-light dark:bg-dark">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary-600 dark:text-primary-400"

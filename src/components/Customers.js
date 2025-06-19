@@ -10,10 +10,6 @@ const companies = [
     logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg',
   },
   {
-    name: 'Lenskart',
-    logo: 'https://1000logos.net/wp-content/uploads/2021/06/Lenskart-logo.png',
-  },
-  {
     name: 'Uber',
     logo: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png',
   },
@@ -30,10 +26,6 @@ const companies = [
     logo: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg',
   },
   {
-    name: 'Meta',
-    logo: 'https://1000logos.net/wp-content/uploads/2021/10/Meta-Logo.png',
-  },
-  {
     name: 'Netflix',
     logo: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg',
   },
@@ -44,10 +36,6 @@ const companies = [
   {
     name: 'Zomato',
     logo: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png',
-  },
-  {
-    name: 'Paytm',
-    logo: 'https://1000logos.net/wp-content/uploads/2021/05/Paytm-logo.png',
   }
 ];
 
