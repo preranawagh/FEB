@@ -123,11 +123,6 @@ const Testimonials = () => {
 
                   {/* Author info */}
                   <div className="flex items-center">
-                    <img
-                      src={testimonials[current].image}
-                      alt={testimonials[current].name}
-                      className="w-12 h-12 rounded-full object-cover mr-4"
-                    />
                     <div>
                       <h4 className="font-semibold text-lg text-gray-900 dark:text-white">
                         {testimonials[current].name}
