@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 const projects = [
@@ -25,8 +25,6 @@ const projects = [
 ];
 
 const Projects = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-
   return (
     <section id="projects" className="section bg-gray-50 dark:bg-dark-800 overflow-hidden">
       <div className="container">
@@ -58,8 +56,6 @@ const Projects = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
               whileHover={{ scale: 1.04, boxShadow: '0 8px 32px rgba(80,80,180,0.15)' }}
-              onHoverStart={() => setHoveredIndex(index)}
-              onHoverEnd={() => setHoveredIndex(null)}
             >
               <span className="text-sm text-primary font-medium mb-2 block">
                 {project.category}
