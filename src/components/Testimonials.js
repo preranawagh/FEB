@@ -76,7 +76,7 @@ const Testimonials = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="heading mb-6">
+          <h2 className="heading mb-6 text-primary-600 dark:text-primary-400 text-center">
             What Our{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600">
               Clients

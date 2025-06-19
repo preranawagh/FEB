@@ -68,12 +68,7 @@ const Contact = ({ onMouseEnter, onMouseLeave }) => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="heading mb-6">
-            Get in{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600">
-              Touch
-            </span>
-          </h2>
+          <h2 className="heading mb-6 text-primary-600 dark:text-primary-400 text-center">Contact Us</h2>
           <p className="subheading">
             Have a project in mind? Let's talk about how we can help you achieve your goals.
           </p>

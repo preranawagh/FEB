@@ -3,7 +3,7 @@ import React from 'react';
 const AboutUs = () => (
   <section id="about" className="section bg-white dark:bg-dark-900">
     <div className="container">
-      <h2 className="heading text-center mb-8 text-primary-600 dark:text-primary-400 font-bold">
+      <h2 className="heading mb-6 text-primary-600 dark:text-primary-400 text-center font-bold">
         About Us
       </h2>
       <p className="max-w-2xl mx-auto text-lg text-center text-gray-700 dark:text-gray-300">

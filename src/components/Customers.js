@@ -64,7 +64,7 @@ const Customers = () => {
   return (
     <section className="py-20 px-4 bg-white dark:bg-dark-900">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-primary-600 dark:text-primary-400">Our Customers</h2>
+        <h2 className="heading mb-6 text-primary-600 dark:text-primary-400 text-center">Our Customers</h2>
         <div className="grid grid-cols-3 grid-rows-2 gap-8">
           {visibleCompanies.map((company) => (
             <div

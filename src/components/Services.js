@@ -40,6 +40,16 @@ const Services = ({ onMouseEnter, onMouseLeave }) => {
       onMouseLeave={onMouseLeave}
     >
       <div className="container">
+        <motion.h2
+          className="heading mb-6 text-primary-600 dark:text-primary-400 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          Our Services
+        </motion.h2>
+
         <motion.div
           className="text-center max-w-3xl mx-auto mb-20"
           initial={{ opacity: 0, y: 20 }}
@@ -47,12 +57,6 @@ const Services = ({ onMouseEnter, onMouseLeave }) => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="heading mb-6">
-            Our{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600">
-              Services
-            </span>
-          </h2>
           <p className="subheading">
             Comprehensive solutions to help your business thrive in the digital world.
           </p>
